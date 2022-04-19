@@ -11,15 +11,28 @@
 </head>
 
 <body>
-    <header class="header-container">
+    <header>
         <h1 class="main-title">Etch-A-Sketch</h1>
-        <button class="button">Black</button>
-        <button>Random</button>
-        <button>Eraser</button>
-        <button>Reset</button>
+        <div class="button-container">
+            <button class="choice-buttons" id="black-button">Black & White</button>
+            <button class="choice-buttons" id="random-button">Random Color</button>
+            <button class="choice-buttons" id="eraser-button">Eraser</button>
+            <button class="choice-buttons" id="reset-button">Reset Canvas</button>
+        </div>
+        <div class="grid-size-container">
+            <input type="range" id="grid-size-choice" name="grid-size-choice" min="2" max="64">
+            <label for="grid-size-choice" style="font-size:20px;">Grid Size</label>
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="drawing-container">
+
+        </div>
+
+    </main>
+    <footer>
+        <h2 id="created-by">Created by Ross Bunnell</h2>
+    </footer>
 </body>
 
 </html>
